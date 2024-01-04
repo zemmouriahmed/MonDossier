@@ -38,9 +38,10 @@ elif Op == '/' :
             resultat = division(N1,N2)
 
 else :
-            print("vérifier vos entrées")
+       print()
+       print()
+       print("vérifier vos entrées")
 
 print()                    
 
 print(f"{N1} {Op} {N2} = {resultat}")
-

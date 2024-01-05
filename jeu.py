@@ -11,12 +11,16 @@ while True:
                 
 if devinette == nombre_mystère :
         print("bravo, vous avez deviné le nombre caché")
+        
         break
     
 elif devinette > nombre_mystère :
-print("trop élevé .... essayez encore")
+
+        print("trop élevé .... essayez encore")
+
 else:
-print("trop bas .... essayez encore")
+
+        print("trop bas .... essayez encore")
     
 
             

@@ -7,7 +7,8 @@ nombre_matieres = int(input("Entrer le nombre de matières :"))
 #Creer un tableau numpy pour stocker les notes de chaque eleve dans chaque matiere
 notes = np.zeros((nombre_eleves, nombre_matieres))
 
-#Demander à l'utilisateur de saisir les notes de chaque elevepour chaque matiere
+#Demander à l'utilisateur de saisir les notes de chaque eleve pour chaque matiere
+#Les notes doivent être saisies sur 100 pour les besoins de la suite
 for i in range(nombre_eleves):
     print(f"\nSaisie des notes pour l'élève {i+1}:")
     for j in range(nombre_matieres):
@@ -17,7 +18,10 @@ for i in range(nombre_eleves):
 notes_totales = np.sum(notes, axis=1)
 
 #Calculer le pourcentage pour chaque élève
-pourcentages = (notes_totales/nombre_matieres)
+pourcentages = (notes_totales/nombre_matieres) 
+#Pour calculer les poucentages de cette façon, il faut que les notes soient établies sur 100
+#Autrement cette formule est fausse.
+
 
 #Determiner la note finale pour chaque eleve en utilisant le systeme de notation
 notes_finales = np.where(pourcentages >= 90, 'A+' ,

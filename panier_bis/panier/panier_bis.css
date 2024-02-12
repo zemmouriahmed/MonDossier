@@ -45,7 +45,7 @@
   left: 0;
   width: 75%;
   height: 40px; /* Hauteur de votre choix */
-  border: 4px solid rgb(236, 229, 15); /* Bordure bleue de 2 pixels */
+  border: 4px solid rgb(236, 229, 15); /* Bordure bleue de 4 pixels */
   box-sizing: border-box; /* Inclure les bordures dans la largeur et la hauteur de la div */
 }
 
@@ -88,27 +88,4 @@
 
 
 
-.rectangle .btn-plusbis {
-  color: black;
-  background-color: aqua;
-  border: 2px;
-  border-color: black;
-  font-size: 15px;
-  
-}
-.rectangle .btn-plusbis:hover {
-  background-color: blueviolet;
-}
 
-.rectangle .btn-minus {
-  color: black;
-  background-color: rgb(241, 17, 73);
-  border: 2px;
-  border-color: black;
-  font-size: 15px;
-}
-
-.rectangle .btn-minus:hover {
-  background-color: rgb(186, 244, 13);
-  background-size: 200%;
-}

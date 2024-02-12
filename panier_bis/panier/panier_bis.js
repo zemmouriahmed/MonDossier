@@ -82,19 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    minusButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            const title = cardData[index].title;
-            if (cart[title] && cart[title] > 0) {
-                cart[title]--;
-                if (cart[title] === 0) {
-                    delete cart[title]; // Supprimer l'article du panier si la quantité atteint zéro
-                }
-                updateCartDisplay(); // Mettre à jour l'affichage des objets sélectionnés
-                console.log(cart);
-            }
-        });
-    });
+   
 
     // Gestionnaire d'événement pour le bouton de panier
     const cartButton = document.querySelector('.btn-panier');

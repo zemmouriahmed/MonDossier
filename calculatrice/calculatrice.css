@@ -1,0 +1,58 @@
+/* Style général de la calculatrice */
+.calculatrice {
+    width: 400px; /* Largeur de la calculatrice */
+    background-color: #480deb; /* Couleur de fond */
+    padding: 20px; /* Espacement intérieur pour ne pas coller les éléments aux bords */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet en relief */
+    margin: auto; /* Centrer la calculatrice horizontalement */
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Les éléments s'organisent en colonnes */
+  }
+  
+  /* Style de l'écran de la calculatrice */
+  .ecran {
+    width: 95%; /* L'écran prend toute la largeur disponible */
+    margin-bottom: 20px; /* Espacement avec les boutons */
+    padding: 10px; /* Espacement intérieur pour le texte */
+    border-radius: 5px; /* Bords arrondis de l'écran */
+    border: 1px solid #ccc; /* Bordure légère */
+    background-color: #201258; /* Couleur de fond de l'écran */
+    font-size: 1.5em; /* Taille du texte plus grande pour une meilleure lisibilité */
+    text-align: right; /* Alignement du texte à droite */
+    color:aliceblue
+  }
+  
+  /* Style des lignes de boutons */
+  .premiere_ligne, .deuxieme_ligne, .troisieme_ligne, .quatrieme_ligne, .cinquieme_ligne {
+    display: flex; /* Active Flexbox pour les lignes */
+    justify-content: space-between; /* Répartit l'espace entre les éléments de manière égale */
+  }
+  
+  /* Style des boutons */
+  .bouton button {
+    flex: 1; /* Les boutons prennent tout l'espace disponible */
+    margin: 5px; /* Espacement entre les boutons */
+    border-radius: 5px; /* Bords arrondis */
+    font-size: 1.2em; /* Taille du texte */
+    cursor: pointer; /* Style du curseur */
+    
+  }
+  
+  /* Ajustement pour les boutons 'reset' et '=' */
+  .cinquieme_ligne button {
+    flex-basis: calc(50% - 10px); /* Prend la moitié de la largeur disponible, ajustement pour la marge */
+  }
+  
+  /* Styles additionnels pour les couleurs et effets */
+  .bouton button {
+    /* Styles pour les couleurs de fond, les couleurs de texte, etc. */
+  }
+  
+  /* Adaptations pour petits écrans */
+  @media (max-width: 420px) {
+    .calculatrice {
+      width: 95%; /* Ajustement de la largeur sur petits écrans */
+    }
+  }
+  

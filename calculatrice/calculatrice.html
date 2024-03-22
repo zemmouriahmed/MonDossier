@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="calculatrice.css" />
+  </head>
+  <body>
+    <div class="calculatrice">
+      <input type="texte" class="ecran" id="visible" placeholder="" />
+
+      <div class="bouton">
+        <div class="premiere_ligne">
+          <button onclick="appuyerBouton('7')">7</button>
+          <button onclick="appuyerBouton('8')">8</button>
+          <button onclick="appuyerBouton('9')">9</button>
+          <button style="background-color:rgb(2, 2, 24); color:aliceblue" onclick="appuyerBouton('del')">del</button>
+        </div>
+        <div class="deuxieme_ligne">
+          <button onclick="appuyerBouton('4')">4</button>
+          <button onclick="appuyerBouton('5')">5</button>
+          <button onclick="appuyerBouton('6')">6</button>
+          <button onclick="appuyerBouton('+')">+</button>
+        </div>
+        <div class="troisieme_ligne">
+          <button onclick="appuyerBouton('1')">1</button>
+          <button onclick="appuyerBouton('2')">2</button>
+          <button onclick="appuyerBouton('3')">3</button>
+          <button onclick="appuyerBouton('-')">-</button>
+        </div>
+        <div class="quatrieme_ligne">
+          <button onclick="appuyerBouton('.')">.</button>
+          <button onclick="appuyerBouton('0')">0</button>
+          <button onclick="appuyerBouton('/')">/</button>
+          <button onclick="appuyerBouton('x')">x</button>
+        </div>
+        <div class="cinquieme_ligne">
+          <button style="background-color:rgb(2, 2, 24); color:aliceblue" onclick="appuyerBouton('reset')">reset</button>
+          <button style="background-color:rgb(102, 16, 16); color:aliceblue" onclick="appuyerBouton('=')">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculatrice.js"></script>
+  </body>
+</html>

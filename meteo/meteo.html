@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="meteo.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <div class="weather-app">
+        <!-- Barre de recherche -->
+        <div class="search">
+            <input type="text" class="search-box" placeholder="Rechercher une ville...">
+        </div>
+
+        <!-- Affichage des conditions météorologiques actuelles -->
+        <div class="current-weather">
+            <h2 class="city-name">Nom de la Ville</h2>
+            <div class="temperature">10°C</div>
+            <div class="weather-description">Ensoleillé</div>
+            <div class="weather-details">
+                <div>Vent: 10 km/h</div>
+                <div>Humidité: 80%</div>
+            </div>
+        </div>
+
+        <!-- Prévisions météorologiques -->
+        <div class="weather-forecast">
+            <div class="forecast-item">
+                <div class="date">Date</div>
+                <div class="temperature">Température</div>
+                <div class="weather-icon">Icône</div>
+            </div>
+            <!-- Répétez .forecast-item pour d'autres jours -->
+        </div>
+    </div>
+
+    <script src="meteo.js"></script> <!-- Lien vers votre fichier JavaScript -->
+</body>
+</html>

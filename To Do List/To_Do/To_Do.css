@@ -1,0 +1,92 @@
+.rectangle_haut {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Hauteur de votre choix */
+  border: none;
+  box-sizing: border-box; /* Inclure les bordures dans la largeur et la hauteur de la div */
+  background-color: rgb(140, 128, 227);
+}
+
+.rectangle_haut h1 {
+  text-align: left; /* Alignement du texte à droite */
+  margin-top: 50px;
+  font-size: 65px;
+  font-family: "Kalam";
+  font-weight: bolder;
+  position: absolute; /* Position absolue pour pouvoir utiliser les propriétés top et right */
+  top: 0;
+  left: 25%; /* Déplacer le texte vers la gauche de 25% de la largeur */
+}
+
+.rectangle_bas {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%; /* Ajusté la hauteur selon votre structure */
+  display: flex;
+  flex-direction: column-reverse; /* Inverser l'ordre des éléments dans la colonne */
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+/*
+.fenetre_dialogue {
+  position: absolute;
+  margin-top: auto;
+  width: 40%;
+  left: 30%;
+  bottom:60%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc
+}*/
+
+input[type="text"] {
+  width: calc(
+    50% - 100px
+  ); /* Ajustement de la largeur avec marge pour le bouton */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  position: absolute;
+  margin-top: auto;
+  right: 15%;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.tache-container {
+  margin-top: auto;
+  width: 40%;
+  left: 30%;
+  bottom:60%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc
+}
+/*
+.boutons-container button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+*/
+
+#fenetre_dialogue {
+  width: calc(100% - 20px); /* Ajustement pour tenir compte du padding */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Espacement avant les tâches ajoutées */
+}
+
+

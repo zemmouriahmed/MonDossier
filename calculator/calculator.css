@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.calculator {
+  border: 1px solid #888;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+#display {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  color: #333;
+  text-align: right;
+  font-size: 1.5em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: cornflowerblue;
+}
+
+.operation,
+.equals,
+.delete,
+.decimal,
+.reset {
+  background-color: #f9a825;
+}
+
+.operation:hover,
+.equals:hover,
+.delete:hover,
+.decimal:hover,
+.reset:hover {
+  background-color: #fbc02d;
+}
+
+/* Ajustements pour doubler la largeur de certains boutons */
+.reset, .equals {
+    grid-column: span 2; /* Permet au bouton de s'étendre sur deux colonnes */
+}
